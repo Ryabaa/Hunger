@@ -1,0 +1,291 @@
+* {
+  scroll-behavior: smooth;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+p,
+a {
+  margin: 0;
+  font-size: 100%;
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: banny;
+  src: url(/banny-cufonfonts/Banny-BoldRound.otf);
+}
+
+.title {
+  font-family: banny;
+  color: white;
+}
+
+.text-medium {
+  color: white;
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  letter-spacing: 1px;
+}
+
+.header-hero-section {
+  background-image: url(./images/header-bg.png);
+  background-size: cover;
+  height: 800px;
+}
+
+.header {
+  height: 175px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.header .nav {
+  width: 532px;
+  height: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.header .nav .nav-link {
+  width: 133px;
+  height: 100px;
+  text-decoration: none;
+  text-transform: uppercase;
+  line-height: 18px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+.header .nav .nav-link:hover {
+  color: #ffee00;
+  text-shadow: #ffee00 4px 4px 6px;
+}
+
+.header .header-image {
+  margin: 25px 35px 0;
+  width: 150px;
+  height: 150px;
+}
+
+.hero {
+  height: 625px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.hero .hero-left-container {
+  width: 294px;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+}
+
+.hero .hero-left-container .hero-time {
+  -webkit-transform: rotate(-90deg);
+          transform: rotate(-90deg);
+  color: white;
+  line-height: 12px;
+  letter-spacing: 0.1em;
+}
+
+.hero .hero-center-container {
+  width: 850px;
+  height: 100%;
+  border-left: 1px solid rgba(255, 255, 255, 0.2);
+  border-right: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.hero .hero-center-container .hero-content-container {
+  margin-top: 150px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.hero .hero-center-container .hero-content-container .hero-subtitle {
+  line-height: 14px;
+  letter-spacing: 0.5em;
+  text-transform: uppercase;
+}
+
+.hero .hero-center-container .hero-content-container .hero-title {
+  margin-top: 70px;
+  font-size: 96px;
+  line-height: 0px;
+  text-transform: uppercase;
+}
+
+.hero .hero-center-container .hero-content-container .hero-line {
+  margin: 80px 0 30px;
+  background-color: #e8c300;
+  border-radius: 50px;
+  width: 60px;
+  height: 5.11px;
+}
+
+.hero .hero-center-container .hero-content-container .hero-links-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.hero .hero-center-container .hero-content-container .hero-links-container .hero-link {
+  width: 200px;
+  height: 60px;
+  line-height: 20px;
+  text-transform: uppercase;
+  text-decoration: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.hero .hero-center-container .hero-content-container .hero-links-container .hero-link-colored {
+  background: #e8c300;
+  border-radius: 5px;
+  margin-right: 40px;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+.hero .hero-center-container .hero-content-container .hero-links-container .hero-link-colored:hover {
+  background-color: unset;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 5px;
+}
+
+.hero .hero-center-container .hero-content-container .hero-links-container .hero-link-transparent {
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 5px;
+  -webkit-transition: all 1s ease;
+  transition: all 1s ease;
+}
+
+.hero .hero-center-container .hero-content-container .hero-links-container .hero-link-transparent:hover {
+  border: none;
+  background-color: #e8c300;
+}
+
+.hero .hero-center-container .hero-content-container .hero-link-down {
+  width: 60px;
+  height: 60px;
+  margin-top: 80px;
+}
+
+.hero .hero-center-container .hero-content-container .hero-icon-down:hover {
+  margin-top: 10px;
+}
+
+.hero .hero-right-container {
+  width: 294px;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.hero .hero-right-container .hero-socials-container {
+  padding-right: 80px;
+  width: 60px;
+  height: 220px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.hero .hero-right-container .hero-socials-container .hero-social-link {
+  width: 60px;
+  height: 60px;
+}
+
+.hero .hero-right-container .hero-socials-container .hero-social-icon {
+  width: 60px;
+  height: 60px;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+.hero .hero-right-container .hero-socials-container .hero-social-icon:hover {
+  width: 50px;
+  height: 50px;
+}
+/*# sourceMappingURL=styles.css.map */
