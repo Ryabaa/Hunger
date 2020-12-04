@@ -16,12 +16,14 @@ a {
 }
 
 @font-face {
-  font-family: banny;
-  src: url(/banny-cufonfonts/Banny-BoldRound.otf);
+  font-family: "Banny Round";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Banny Round"), url("./images/Banny-Round.woff") format("woff");
 }
 
 .title {
-  font-family: banny;
+  font-family: "Banny Round";
   color: white;
 }
 
