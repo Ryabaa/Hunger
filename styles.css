@@ -165,9 +165,9 @@ a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
 }
 
 .hero .hero-left-container .hero-time {
@@ -285,9 +285,9 @@ a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -298,7 +298,7 @@ a {
 }
 
 .hero .hero-right-container .hero-social-link {
-  margin-left: 155px;
+  margin-right: 80px;
   width: 60px;
   height: 60px;
 }
@@ -319,9 +319,8 @@ a {
   height: 50px;
 }
 
-.about-sqare {
+.sqare {
   position: absolute;
-  right: 30px;
   width: 250px;
   height: 250px;
   border: 20px solid #e8c300;
@@ -332,7 +331,11 @@ a {
   border-radius: 5px;
 }
 
-.about-section {
+.right-sqare {
+  right: 80px;
+}
+
+.section {
   height: 675px;
   background-color: white;
   display: -webkit-box;
@@ -342,13 +345,16 @@ a {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   padding: 0 80px;
 }
 
-.about-section .about-container {
+.section .container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -362,28 +368,55 @@ a {
   text-align: center;
 }
 
-.about-section .about-container .about-title {
+.section .container .section-title {
   font-size: 36px;
   line-height: 48px;
   color: #000000;
 }
 
-.about-section .about-container .about-line {
+.section .container .line {
   margin: 10px 0 20px;
 }
 
-.about-section .about-container .about-subtitle {
+.section .container .section-subtitle {
   width: 565px;
 }
 
-.about-section .about-container .about-text {
+.section .container .section-text {
   margin-top: 20px;
   width: 600px;
 }
 
-.about-section .about-image {
-  padding-right: 154px;
-  width: 575px;
-  height: 575px;
+.section .right-image {
+  margin-right: 80px;
+  width: 525px;
+  height: 525px;
+}
+
+.team-section {
+  background-image: url(./images/team-bg.png);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+  color: white;
+}
+
+.team-section .team-title {
+  font-size: 36px;
+  line-height: 48px;
+}
+
+.team-section .left-sqare {
+  left: 80px;
+}
+
+.team-section .left-image {
+  margin-left: 80px;
+  width: 525px;
+  height: 525px;
 }
 /*# sourceMappingURL=styles.css.map */

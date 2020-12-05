@@ -141,7 +141,7 @@ $sans: "Open Sans";
 		height: 100%;
 		display: flex;
 		align-items: center;
-		justify-content: flex-start;
+		justify-content: flex-end;
 
 		.hero-time {
 			transform: rotate(-90deg);
@@ -235,12 +235,12 @@ $sans: "Open Sans";
 		width: 20%;
 		height: 100%;
 		display: flex;
-		align-items: flex-start;
+		align-items: flex-end;
 		justify-content: center;
 		flex-direction: column;
 
 		.hero-social-link {
-			margin-left: 155px;
+			margin-right: 80px;
 			width: 60px;
 			height: 60px;
 		}
@@ -263,9 +263,8 @@ $sans: "Open Sans";
 
 $bg-white: white;
 
-.about-sqare {
+.sqare {
 	position: absolute;
-	right: 30px;
 	width: 250px;
 	height: 250px;
 	border: 20px solid #e8c300;
@@ -274,43 +273,70 @@ $bg-white: white;
 	border-radius: 5px;
 }
 
-.about-section {
+.right-sqare {
+	right: 80px;
+}
+
+.section {
 	height: 675px;
 	background-color: $bg-white;
 	display: flex;
 	flex-direction: row;
+	justify-content: space-between;
 	align-items: center;
 	padding: 0 80px;
 
-	.about-container {
+	.container {
 		display: flex;
 		flex-direction: column;
 		align-items: center;
 		text-align: center;
 
-		.about-title {
+		.section-title {
 			font-size: 36px;
 			line-height: 48px;
 			color: #000000;
 		}
 
-		.about-line {
+		.line {
 			margin: 10px 0 20px;
 		}
 
-		.about-subtitle {
+		.section-subtitle {
 			width: 565px;
 		}
 
-		.about-text {
+		.section-text {
 			margin-top: 20px;
 			width: 600px;
 		}
 	}
 
-	.about-image {
-		padding-right: 154px;
-		width: 575px;
-		height: 575px;
+	.right-image {
+		margin-right: 80px;
+		width: 525px;
+		height: 525px;
+	}
+}
+
+.team-section {
+	background-image: url(./images/team-bg.png);
+	display: flex;
+	flex-direction: row-reverse;
+	color: white;
+
+	.team-title {
+		font-size: 36px;
+		line-height: 48px;
+	}
+
+	.left-sqare {
+		left: 80px;
+	}
+
+	.left-image {
+		margin-left: 80px;
+		width: 525px;
+		height: 525px;
 	}
 }
