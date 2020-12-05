@@ -29,15 +29,41 @@ $hero-yellow: #e8c300;
 .title {
 	font-family: "Banny Round";
 	color: white;
+	text-transform: uppercase;
+}
+
+$sans: "Open Sans";
+
+.text {
+	font-family: $sans;
+	font-weight: 400;
+	font-style: normal;
+	font-size: 14px;
+	line-height: 24px;
+}
+
+.subtitle {
+	font-family: $sans;
+	font-weight: 700;
+	font-style: normal;
+	font-size: 18px;
+	line-height: 28px;
 }
 
 .text-medium {
 	color: white;
-	font-family: "Open Sans";
+	font-family: $sans;
 	font-style: normal;
 	font-weight: bold;
 	font-size: 12px;
 	letter-spacing: 1px;
+}
+
+.yellow-line {
+	background-color: $hero-yellow;
+	border-radius: 50px;
+	width: 60px;
+	height: 5.11px;
 }
 
 .header-hero-section {
@@ -115,7 +141,7 @@ $hero-yellow: #e8c300;
 		height: 100%;
 		display: flex;
 		align-items: center;
-		justify-content: flex-end;
+		justify-content: flex-start;
 
 		.hero-time {
 			transform: rotate(-90deg);
@@ -135,7 +161,7 @@ $hero-yellow: #e8c300;
 		align-items: center;
 
 		.hero-subtitle {
-			padding-top: 225px;
+			margin-top: 225px;
 			line-height: 14px;
 			letter-spacing: 0.5em;
 			text-transform: uppercase;
@@ -145,15 +171,10 @@ $hero-yellow: #e8c300;
 			margin-top: 70px;
 			font-size: 96px;
 			line-height: 0px;
-			text-transform: uppercase;
 		}
 
 		.hero-line {
 			margin: 80px 0 30px;
-			background-color: $hero-yellow;
-			border-radius: 50px;
-			width: 60px;
-			height: 5.11px;
 		}
 
 		.hero-links-container {
@@ -219,7 +240,7 @@ $hero-yellow: #e8c300;
 		flex-direction: column;
 
 		.hero-social-link {
-			padding-left: 155px;
+			margin-left: 155px;
 			width: 60px;
 			height: 60px;
 		}
@@ -237,5 +258,59 @@ $hero-yellow: #e8c300;
 			width: 50px;
 			height: 50px;
 		}
+	}
+}
+
+$bg-white: white;
+
+.about-sqare {
+	position: absolute;
+	right: 30px;
+	width: 250px;
+	height: 250px;
+	border: 20px solid #e8c300;
+	box-sizing: border-box;
+	filter: drop-shadow(0px 0px 100px rgba(0, 0, 0, 0.5));
+	border-radius: 5px;
+}
+
+.about-section {
+	height: 675px;
+	background-color: $bg-white;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	padding: 0 80px;
+
+	.about-container {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		text-align: center;
+
+		.about-title {
+			font-size: 36px;
+			line-height: 48px;
+			color: #000000;
+		}
+
+		.about-line {
+			margin: 10px 0 20px;
+		}
+
+		.about-subtitle {
+			width: 565px;
+		}
+
+		.about-text {
+			margin-top: 20px;
+			width: 600px;
+		}
+	}
+
+	.about-image {
+		padding-right: 154px;
+		width: 575px;
+		height: 575px;
 	}
 }

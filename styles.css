@@ -25,6 +25,23 @@ a {
 .title {
   font-family: "Banny Round";
   color: white;
+  text-transform: uppercase;
+}
+
+.text {
+  font-family: "Open Sans";
+  font-weight: 400;
+  font-style: normal;
+  font-size: 14px;
+  line-height: 24px;
+}
+
+.subtitle {
+  font-family: "Open Sans";
+  font-weight: 700;
+  font-style: normal;
+  font-size: 18px;
+  line-height: 28px;
 }
 
 .text-medium {
@@ -34,6 +51,13 @@ a {
   font-weight: bold;
   font-size: 12px;
   letter-spacing: 1px;
+}
+
+.yellow-line {
+  background-color: #e8c300;
+  border-radius: 50px;
+  width: 60px;
+  height: 5.11px;
 }
 
 .header-hero-section {
@@ -141,9 +165,9 @@ a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
 }
 
 .hero .hero-left-container .hero-time {
@@ -172,7 +196,7 @@ a {
 }
 
 .hero .hero-center-container .hero-subtitle {
-  padding-top: 225px;
+  margin-top: 225px;
   line-height: 14px;
   letter-spacing: 0.5em;
   text-transform: uppercase;
@@ -182,15 +206,10 @@ a {
   margin-top: 70px;
   font-size: 96px;
   line-height: 0px;
-  text-transform: uppercase;
 }
 
 .hero .hero-center-container .hero-line {
   margin: 80px 0 30px;
-  background-color: #e8c300;
-  border-radius: 50px;
-  width: 60px;
-  height: 5.11px;
 }
 
 .hero .hero-center-container .hero-links-container {
@@ -279,7 +298,7 @@ a {
 }
 
 .hero .hero-right-container .hero-social-link {
-  padding-left: 155px;
+  margin-left: 155px;
   width: 60px;
   height: 60px;
 }
@@ -298,5 +317,73 @@ a {
 .hero .hero-right-container .hero-social-icon:hover {
   width: 50px;
   height: 50px;
+}
+
+.about-sqare {
+  position: absolute;
+  right: 30px;
+  width: 250px;
+  height: 250px;
+  border: 20px solid #e8c300;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-filter: drop-shadow(0px 0px 100px rgba(0, 0, 0, 0.5));
+          filter: drop-shadow(0px 0px 100px rgba(0, 0, 0, 0.5));
+  border-radius: 5px;
+}
+
+.about-section {
+  height: 675px;
+  background-color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0 80px;
+}
+
+.about-section .about-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+}
+
+.about-section .about-container .about-title {
+  font-size: 36px;
+  line-height: 48px;
+  color: #000000;
+}
+
+.about-section .about-container .about-line {
+  margin: 10px 0 20px;
+}
+
+.about-section .about-container .about-subtitle {
+  width: 565px;
+}
+
+.about-section .about-container .about-text {
+  margin-top: 20px;
+  width: 600px;
+}
+
+.about-section .about-image {
+  padding-right: 154px;
+  width: 575px;
+  height: 575px;
 }
 /*# sourceMappingURL=styles.css.map */
