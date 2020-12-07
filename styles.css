@@ -126,20 +126,20 @@ a {
   height: 150px;
 }
 
-.center-line-top {
+.vertical-line {
   width: 1px;
-  height: 454px;
-  margin: 111px 0 0 50%;
   position: absolute;
   background-color: #ffffff33;
 }
 
+.center-line-top {
+  height: 454px;
+  margin: 111px 0 0 50%;
+}
+
 .center-line-bottom {
-  width: 1px;
   height: 75px;
   margin: 625px 0 0 50%;
-  position: absolute;
-  background-color: #ffffff33;
 }
 
 .hero {
@@ -165,9 +165,9 @@ a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
 }
 
 .hero .hero-left-container .hero-time {
@@ -338,6 +338,7 @@ a {
 .section {
   height: 675px;
   background-color: white;
+  background-size: cover;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -393,19 +394,67 @@ a {
   height: 525px;
 }
 
-.team-section {
-  background-image: url(./images/team-bg.png);
+.section-name {
+  padding-top: 50px;
+  position: absolute;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: reverse;
-      -ms-flex-direction: row-reverse;
-          flex-direction: row-reverse;
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+  left: 50%;
+  -webkit-transform: translate(-50%, 0);
+          transform: translate(-50%, 0);
+  font-size: 12px;
+  font-family: "Open Sans";
+  font-weight: 700;
+  line-height: 14px;
+  letter-spacing: 0.5em;
+  text-transform: uppercase;
   color: white;
 }
 
-.team-section .team-title {
+.team-line {
+  height: 675px;
+}
+
+.team-line-left-top {
+  left: 20%;
+  height: 121px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+}
+
+.team-line-left-bottom {
+  left: 20%;
+  height: 121px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+}
+
+.team-line-center {
+  left: 50%;
+}
+
+.team-line-right {
+  right: 20%;
+}
+
+.team-section {
+  background-image: url(./images/team-bg.png);
+}
+
+.team-section .team-container {
+  color: white;
+}
+
+.team-section .team-container .team-title {
   font-size: 36px;
   line-height: 48px;
 }
