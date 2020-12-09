@@ -24,7 +24,6 @@ a {
 
 .title {
   font-family: "Banny Round";
-  color: white;
   text-transform: uppercase;
 }
 
@@ -206,6 +205,7 @@ a {
   margin-top: 70px;
   font-size: 96px;
   line-height: 0px;
+  color: white;
 }
 
 .hero .hero-center-container .hero-line {
@@ -321,8 +321,8 @@ a {
 
 .sqare {
   position: absolute;
-  width: 250px;
-  height: 250px;
+  width: 225px;
+  height: 225px;
   border: 20px solid #e8c300;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -355,6 +355,16 @@ a {
   padding: 0 80px;
 }
 
+.section .section-title {
+  font-size: 36px;
+  line-height: 48px;
+  color: #000000;
+}
+
+.section .line {
+  margin: 10px 0 20px;
+}
+
 .section .container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -369,16 +379,6 @@ a {
   text-align: center;
 }
 
-.section .container .section-title {
-  font-size: 36px;
-  line-height: 48px;
-  color: #000000;
-}
-
-.section .container .line {
-  margin: 10px 0 20px;
-}
-
 .section .container .section-subtitle {
   width: 565px;
 }
@@ -390,12 +390,12 @@ a {
 
 .section .right-image {
   margin-right: 80px;
-  width: 525px;
-  height: 525px;
+  width: 500px;
+  height: 500px;
 }
 
 .section-name {
-  padding-top: 50px;
+  margin-top: 50px;
   position: absolute;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -420,7 +420,7 @@ a {
 
 .team-line-left-top {
   left: 20%;
-  height: 121px;
+  height: 131px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -430,7 +430,7 @@ a {
 
 .team-line-left-bottom {
   left: 20%;
-  height: 121px;
+  height: 131px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -455,8 +455,7 @@ a {
 }
 
 .team-section .team-container .team-title {
-  font-size: 36px;
-  line-height: 48px;
+  color: white;
 }
 
 .team-section .left-sqare {
@@ -465,7 +464,112 @@ a {
 
 .team-section .left-image {
   margin-left: 80px;
-  width: 525px;
-  height: 525px;
+  width: 500px;
+  height: 500px;
+}
+
+.booking-time {
+  position: absolute;
+  color: rgba(51, 51, 51, 0.5);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  left: 50%;
+  -webkit-transform: translate(-50%, 0);
+          transform: translate(-50%, 0);
+  font-weight: 400;
+  margin-bottom: 50px;
+}
+
+.booking-time-span {
+  color: rgba(51, 51, 51, 0.8);
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.input {
+  background-color: #e5e5e5;
+  line-height: 19px;
+  text-indent: 20px;
+  border-radius: 5px;
+  border: 0;
+}
+
+.input:focus {
+  outline: none;
+}
+
+.yellow-button {
+  margin-top: 10px;
+  background-color: #e8c300;
+  border-radius: 5px;
+  -webkit-transition: all 0.7s ease;
+  transition: all 0.7s ease;
+  border: 0;
+  line-height: 20px;
+  text-transform: uppercase;
+  text-decoration: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.yellow-button:focus {
+  outline: none;
+}
+
+.yellow-button:hover {
+  background-color: unset;
+  border: 1px solid #e5e5e5;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 5px;
+  color: #e8c300;
+}
+
+.booking-button {
+  width: 570px;
+  height: 60px;
+}
+
+.booking-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.booking-form {
+  width: 570px;
+  height: 200px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-line-pack: justify;
+      align-content: space-between;
+}
+
+.booking-form .booking-input {
+  height: 60px;
+  width: 277px;
 }
 /*# sourceMappingURL=styles.css.map */

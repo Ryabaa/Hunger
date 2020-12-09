@@ -24,11 +24,12 @@ a {
 
 $hero-border: #ffffff33;
 
-$hero-yellow: #e8c300;
+$link-border: #ffffff80;
+
+$yellow: #e8c300;
 
 .title {
 	font-family: "Banny Round";
-	color: white;
 	text-transform: uppercase;
 }
 
@@ -60,7 +61,7 @@ $sans: "Open Sans";
 }
 
 .yellow-line {
-	background-color: $hero-yellow;
+	background-color: $yellow;
 	border-radius: 50px;
 	width: 60px;
 	height: 5.11px;
@@ -97,8 +98,8 @@ $sans: "Open Sans";
 		}
 
 		.nav-link:hover {
-			color: $hero-yellow;
-			text-shadow: $hero-yellow 4px 4px 6px;
+			color: $yellow;
+			text-shadow: $yellow 4px 4px 6px;
 		}
 	}
 
@@ -171,6 +172,7 @@ $sans: "Open Sans";
 			margin-top: 70px;
 			font-size: 96px;
 			line-height: 0px;
+			color: white;
 		}
 
 		.hero-line {
@@ -193,13 +195,11 @@ $sans: "Open Sans";
 			}
 
 			.hero-link-colored {
-				background: $hero-yellow;
+				background: $yellow;
 				border-radius: 5px;
 				margin-right: 40px;
 				transition: all 0.5s ease;
 			}
-
-			$link-border: #ffffff80;
 
 			.hero-link-colored:hover {
 				background-color: unset;
@@ -217,7 +217,7 @@ $sans: "Open Sans";
 
 			.hero-link-transparent:hover {
 				border: none;
-				background-color: $hero-yellow;
+				background-color: $yellow;
 			}
 		}
 
@@ -265,8 +265,8 @@ $bg-white: white;
 
 .sqare {
 	position: absolute;
-	width: 250px;
-	height: 250px;
+	width: 225px;
+	height: 225px;
 	border: 20px solid #e8c300;
 	box-sizing: border-box;
 	filter: drop-shadow(0px 0px 100px rgba(0, 0, 0, 0.5));
@@ -287,21 +287,21 @@ $bg-white: white;
 	align-items: center;
 	padding: 0 80px;
 
+	.section-title {
+		font-size: 36px;
+		line-height: 48px;
+		color: #000000;
+	}
+
+	.line {
+		margin: 10px 0 20px;
+	}
+
 	.container {
 		display: flex;
 		flex-direction: column;
 		align-items: center;
 		text-align: center;
-
-		.section-title {
-			font-size: 36px;
-			line-height: 48px;
-			color: #000000;
-		}
-
-		.line {
-			margin: 10px 0 20px;
-		}
 
 		.section-subtitle {
 			width: 565px;
@@ -315,13 +315,13 @@ $bg-white: white;
 
 	.right-image {
 		margin-right: 80px;
-		width: 525px;
-		height: 525px;
+		width: 500px;
+		height: 500px;
 	}
 }
 
 .section-name {
-	padding-top: 50px;
+	margin-top: 50px;
 	position: absolute;
 	display: flex;
 	align-self: flex-start;
@@ -342,14 +342,14 @@ $bg-white: white;
 
 .team-line-left-top {
 	left: 20%;
-	height: 121px;
+	height: 131px;
 	display: flex;
 	align-self: flex-start;
 }
 
 .team-line-left-bottom {
 	left: 20%;
-	height: 121px;
+	height: 131px;
 	display: flex;
 	align-self: flex-end;
 }
@@ -369,8 +369,7 @@ $bg-white: white;
 		color: white;
 
 		.team-title {
-			font-size: 36px;
-			line-height: 48px;
+			color: white;
 		}
 	}
 
@@ -380,7 +379,89 @@ $bg-white: white;
 
 	.left-image {
 		margin-left: 80px;
-		width: 525px;
-		height: 525px;
+		width: 500px;
+		height: 500px;
+	}
+}
+
+$gray: #e5e5e5;
+
+.booking-time {
+	position: absolute;
+	color: rgba(51, 51, 51, 0.5);
+	display: flex;
+	align-self: flex-end;
+	left: 50%;
+	transform: translate(-50%, 0);
+	font-weight: 400;
+	margin-bottom: 50px;
+}
+
+.booking-time-span {
+	color: rgba(51, 51, 51, 0.8);
+	font-weight: 700;
+	text-transform: uppercase;
+}
+
+.input {
+	background-color: $gray;
+	line-height: 19px;
+	text-indent: 20px;
+	border-radius: 5px;
+	border: 0;
+}
+
+.input:focus {
+	outline: none;
+}
+
+.yellow-button {
+	margin-top: 10px;
+	background-color: $yellow;
+	border-radius: 5px;
+	transition: all 0.7s ease;
+	border: 0;
+	line-height: 20px;
+	text-transform: uppercase;
+	text-decoration: none;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.yellow-button:focus {
+	outline: none;
+}
+
+.yellow-button:hover {
+	background-color: unset;
+	border: 1px solid $gray;
+	box-sizing: border-box;
+	border-radius: 5px;
+	color: $yellow;
+}
+
+.booking-button {
+	width: 570px;
+	height: 60px;
+}
+
+.booking-container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.booking-form {
+	width: 570px;
+	height: 200px;
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	align-content: space-between;
+
+	.booking-input {
+		height: 60px;
+		width: 277px;
 	}
 }
