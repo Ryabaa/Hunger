@@ -435,10 +435,11 @@ $gray: #e5e5e5;
 
 .yellow-button:hover {
 	background-color: unset;
-	border: 1px solid $gray;
+	border: 1px solid $yellow;
 	box-sizing: border-box;
 	border-radius: 5px;
 	color: $yellow;
+	text-shadow: $yellow 4px 2px 8px;
 }
 
 .booking-button {
@@ -476,4 +477,83 @@ $gray: #e5e5e5;
 	align-self: flex-end;
 	justify-content: space-between;
 	align-content: center;
+}
+
+$dark-gray: #333333;
+
+.menu-section {
+	padding: 100px 80px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+
+	.menu-line {
+		margin: 10px 0 20px;
+	}
+
+	.menu-subtitle {
+		max-width: 520px;
+		text-align: center;
+	}
+
+	.menu-buttons-container {
+		margin: 50px 0;
+		display: flex;
+		flex-direction: row;
+
+		.menu-button {
+			width: 120px;
+			height: 50px;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			border: 0;
+			background: $bg-white;
+			text-transform: uppercase;
+			font-size: 12px;
+			line-height: 18px;
+			color: $dark-gray;
+			font-weight: 700;
+			transition: all 0.8s ease;
+		}
+
+		.menu-button:not(:first-child) {
+			border-left: 1px solid $gray;
+		}
+
+		.menu-button:hover {
+			background: $yellow;
+		}
+
+		.menu-button:focus {
+			outline: none;
+		}
+	}
+
+	.menu-cards-container {
+		width: 100%;
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+
+		.menu-cards-columns {
+			flex-direction: column;
+		}
+
+		.menu-card:not(:first-child) {
+			margin-top: 50px;
+		}
+
+		.menu-card-title {
+			font-size: 18px;
+			line-height: 18px;
+			color: $dark-gray;
+		}
+
+		.menu-card-text {
+			font-size: 12px;
+			line-height: 18px;
+			color: $dark-gray;
+		}
+	}
 }
