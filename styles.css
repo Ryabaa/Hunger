@@ -335,6 +335,12 @@ a {
   right: 80px;
 }
 
+.section-title {
+  font-size: 36px;
+  line-height: 48px;
+  color: #000000;
+}
+
 .section {
   height: 675px;
   background-color: white;
@@ -353,12 +359,6 @@ a {
       -ms-flex-align: center;
           align-items: center;
   padding: 0 80px;
-}
-
-.section .section-title {
-  font-size: 36px;
-  line-height: 48px;
-  color: #000000;
 }
 
 .section .line {
@@ -414,11 +414,11 @@ a {
   color: white;
 }
 
-.team-line {
+.team-specialties-line {
   height: 675px;
 }
 
-.team-line-left-top {
+.team-specialties-line-left-top {
   left: 20%;
   height: 131px;
   display: -webkit-box;
@@ -428,7 +428,7 @@ a {
       align-self: flex-start;
 }
 
-.team-line-left-bottom {
+.team-specialties-line-left-bottom {
   left: 20%;
   height: 131px;
   display: -webkit-box;
@@ -438,31 +438,31 @@ a {
       align-self: flex-end;
 }
 
-.team-line-center {
+.team-specialties-line-center {
   left: 50%;
 }
 
-.team-line-right {
+.team-specialties-line-right {
   right: 20%;
 }
 
-.team-section {
+.team-specialties-section {
   background-image: url(./images/team-bg.png);
 }
 
-.team-section .team-container {
+.team-specialties-section .team-specialties-container {
   color: white;
 }
 
-.team-section .team-container .team-title {
+.team-specialties-section .team-specialties-container .team-specialties-title {
   color: white;
 }
 
-.team-section .left-sqare {
+.team-specialties-section .left-sqare {
   left: 80px;
 }
 
-.team-section .left-image {
+.team-specialties-section .left-image {
   margin-left: 80px;
   width: 500px;
   height: 500px;
@@ -571,5 +571,24 @@ a {
 .booking-form .booking-input {
   height: 60px;
   width: 277px;
+}
+
+.specialties-ellipse {
+  margin-bottom: 45px;
+  position: absolute;
+  width: 70px;
+  left: 50%;
+  -webkit-transform: translate(-50%, 0%);
+          transform: translate(-50%, 0%);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-line-pack: center;
+      align-content: center;
 }
 /*# sourceMappingURL=styles.css.map */
