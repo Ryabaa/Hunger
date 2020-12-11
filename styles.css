@@ -420,7 +420,7 @@ a {
 
 .team-specialties-line-left-top {
   left: 20%;
-  height: 156px;
+  height: 141px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -430,7 +430,7 @@ a {
 
 .team-specialties-line-left-bottom {
   left: 20%;
-  height: 156px;
+  height: 141px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -727,7 +727,7 @@ a {
 }
 
 .events-line-left-right {
-  height: 156px;
+  height: 141px;
 }
 
 .events-line-left {
