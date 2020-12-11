@@ -1,3 +1,4 @@
+@import url("./media/media-1366px.css");
 * {
   scroll-behavior: smooth;
 }
@@ -778,5 +779,19 @@ a {
   margin: 0 20px;
   color: white;
   font-size: 24px;
+}
+
+.photos-section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background: #573a26;
 }
 /*# sourceMappingURL=styles.css.map */
