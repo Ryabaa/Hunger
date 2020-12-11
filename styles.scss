@@ -315,8 +315,8 @@ $bg-white: white;
 
 	.right-image {
 		margin-right: 80px;
-		width: 500px;
-		height: 500px;
+		width: 475px;
+		height: 475px;
 	}
 }
 
@@ -342,14 +342,14 @@ $bg-white: white;
 
 .team-specialties-line-left-top {
 	left: 20%;
-	height: 131px;
+	height: 156px;
 	display: flex;
 	align-self: flex-start;
 }
 
 .team-specialties-line-left-bottom {
 	left: 20%;
-	height: 131px;
+	height: 156px;
 	display: flex;
 	align-self: flex-end;
 }
@@ -376,17 +376,17 @@ $bg-white: white;
 	.left-sqare {
 		left: 80px;
 	}
+}
 
-	.left-image {
-		margin-left: 80px;
-		width: 500px;
-		height: 500px;
-	}
+.left-image {
+	margin-left: 80px;
+	width: 475px;
+	height: 475px;
 }
 
 $gray: #e5e5e5;
 
-.booking-time {
+.section-info {
 	position: absolute;
 	color: rgba(51, 51, 51, 0.5);
 	display: flex;
@@ -394,10 +394,12 @@ $gray: #e5e5e5;
 	left: 50%;
 	transform: translate(-50%, 0);
 	font-weight: 400;
+	letter-spacing: 0.05em;
 	margin-bottom: 50px;
 }
 
-.booking-time-span {
+.booking-info-span {
+	white-space: pre-wrap;
 	color: rgba(51, 51, 51, 0.8);
 	font-weight: 700;
 	text-transform: uppercase;
@@ -555,5 +557,72 @@ $dark-gray: #333333;
 			line-height: 18px;
 			color: $dark-gray;
 		}
+	}
+}
+
+.events-info {
+	color: #ffffff80;
+}
+
+.events-info-span {
+	color: #ffffffb3;
+	white-space: pre-wrap;
+}
+
+.events-line-top {
+	display: flex;
+	align-self: flex-start;
+}
+
+.events-line-bottom {
+	display: flex;
+	align-self: flex-end;
+}
+
+.events-line-left-right {
+	height: 156px;
+}
+
+.events-line-left {
+	left: 20%;
+}
+
+.events-line-center {
+	left: 50%;
+	height: 675px;
+}
+
+.events-line-right {
+	right: 20%;
+}
+
+.events-section {
+	background: url(./images/events-bg.png);
+
+	.events-card {
+		position: absolute;
+		background: black;
+		width: 394px;
+		height: 60px;
+		display: flex;
+		align-items: center;
+	}
+
+	.events-card-left {
+		border-radius: 5px 5px 0px 0px;
+		left: 423px;
+		transform: rotate(90deg);
+	}
+
+	.events-card-right {
+		border-radius: 5px 5px 0px 0px;
+		right: 423px;
+		transform: rotate(-90deg);
+	}
+
+	.events-title {
+		margin: 0 20px;
+		color: white;
+		font-size: 24px;
 	}
 }
