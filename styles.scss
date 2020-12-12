@@ -709,3 +709,19 @@ $dark-gray: #333333;
 	background: url(./images/map-img.png);
 	background-size: cover;
 }
+
+.footer{
+	background: #000000e6;
+	padding: 50px 0;
+	text-align: center;
+	
+	.footer-title{
+		color: gray;
+
+		.footer-link{
+			color: $gray;
+			font-weight: 900;
+			text-decoration: none;
+		}
+	}
+}

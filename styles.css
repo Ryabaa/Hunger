@@ -900,4 +900,20 @@ a {
   background: url(./images/map-img.png);
   background-size: cover;
 }
+
+.footer {
+  background: #000000e6;
+  padding: 50px 0;
+  text-align: center;
+}
+
+.footer .footer-title {
+  color: gray;
+}
+
+.footer .footer-title .footer-link {
+  color: #e5e5e5;
+  font-weight: 900;
+  text-decoration: none;
+}
 /*# sourceMappingURL=styles.css.map */
