@@ -678,17 +678,7 @@ $dark-gray: #333333;
 				display: flex;
 				flex-direction: row;
 
-				.contact-gps-icon{
-					width: 23px;
-					height: 20px;
-				}
-
-				.contact-phone-icon{
-					width: 15px;
-					height: 15px;
-				}
-
-				.contact-mail-icon{
+				.contact-card-icon{
 					width: 20px;
 					height: 20px;
 				}
@@ -712,4 +702,10 @@ $dark-gray: #333333;
 			font-weight: 700;
 		}
 	}
+}
+
+.map-section{
+	height: 475px;
+	background: url(./images/map-img.png);
+	background-size: cover;
 }

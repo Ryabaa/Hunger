@@ -873,17 +873,7 @@ a {
           flex-direction: row;
 }
 
-.contact-section .contact-container-button .contact-container .contact-card .contact-gps-icon {
-  width: 23px;
-  height: 20px;
-}
-
-.contact-section .contact-container-button .contact-container .contact-card .contact-phone-icon {
-  width: 15px;
-  height: 15px;
-}
-
-.contact-section .contact-container-button .contact-container .contact-card .contact-mail-icon {
+.contact-section .contact-container-button .contact-container .contact-card .contact-card-icon {
   width: 20px;
   height: 20px;
 }
@@ -903,5 +893,11 @@ a {
   height: 60px;
   color: white;
   font-weight: 700;
+}
+
+.map-section {
+  height: 475px;
+  background: url(./images/map-img.png);
+  background-size: cover;
 }
 /*# sourceMappingURL=styles.css.map */
