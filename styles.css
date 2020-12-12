@@ -342,6 +342,11 @@ a {
   color: #000000;
 }
 
+.section-subtitle {
+  width: 520px;
+  text-align: center;
+}
+
 .section {
   height: 675px;
   background-color: white;
@@ -378,10 +383,6 @@ a {
       -ms-flex-align: center;
           align-items: center;
   text-align: center;
-}
-
-.section .container .section-subtitle {
-  width: 565px;
 }
 
 .section .container .section-text {
@@ -498,6 +499,7 @@ a {
   text-indent: 20px;
   border-radius: 5px;
   border: 0;
+  height: 60px;
 }
 
 .input:focus {
@@ -573,7 +575,6 @@ a {
 }
 
 .booking-form .booking-input {
-  height: 60px;
   width: 277px;
 }
 
@@ -612,11 +613,6 @@ a {
 
 .menu-section .menu-line {
   margin: 10px 0 20px;
-}
-
-.menu-section .menu-subtitle {
-  max-width: 520px;
-  text-align: center;
 }
 
 .menu-section .menu-buttons-container {
@@ -793,5 +789,119 @@ a {
       -ms-flex-pack: justify;
           justify-content: space-between;
   background: #573a26;
+}
+
+.contact-section {
+  padding: 100px 80px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.contact-section .contact-line {
+  margin: 10px 0 20px;
+}
+
+.contact-section .contact-form {
+  width: 100%;
+  margin: 50px 0 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.contact-section .contact-form .contact-input-small {
+  width: 32.5%;
+}
+
+.contact-section .contact-form .contact-input-big {
+  margin-top: 10px;
+  height: 120px;
+  width: 100%;
+}
+
+.contact-section .contact-container-button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  margin-top: 10px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+}
+
+.contact-section .contact-container-button .contact-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  width: 60%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.contact-section .contact-container-button .contact-container .contact-card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.contact-section .contact-container-button .contact-container .contact-card .contact-gps-icon {
+  width: 23px;
+  height: 20px;
+}
+
+.contact-section .contact-container-button .contact-container .contact-card .contact-phone-icon {
+  width: 15px;
+  height: 15px;
+}
+
+.contact-section .contact-container-button .contact-container .contact-card .contact-mail-icon {
+  width: 20px;
+  height: 20px;
+}
+
+.contact-section .contact-container-button .contact-container .contact-card .contact-card-text {
+  color: gray;
+  margin-left: 10px;
+}
+
+.contact-section .contact-container-button .contact-container .contact-card:not(:first-child) {
+  margin-left: 20px;
+}
+
+.contact-section .contact-container-button .contact-button {
+  margin: 0;
+  width: 40%;
+  height: 60px;
+  color: white;
+  font-weight: 700;
 }
 /*# sourceMappingURL=styles.css.map */

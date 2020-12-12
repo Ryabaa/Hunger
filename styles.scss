@@ -285,6 +285,11 @@ $bg-white: white;
 	color: #000000;
 }
 
+.section-subtitle {
+	width: 520px;
+	text-align: center;
+}
+
 .section {
 	height: 675px;
 	background-color: $bg-white;
@@ -305,9 +310,6 @@ $bg-white: white;
 		align-items: center;
 		text-align: center;
 
-		.section-subtitle {
-			width: 565px;
-		}
 
 		.section-text {
 			margin-top: 20px;
@@ -413,6 +415,7 @@ $gray: #e5e5e5;
 	text-indent: 20px;
 	border-radius: 5px;
 	border: 0;
+	height: 60px;
 }
 
 .input:focus {
@@ -466,7 +469,6 @@ $gray: #e5e5e5;
 	align-content: space-between;
 
 	.booking-input {
-		height: 60px;
 		width: 277px;
 	}
 }
@@ -493,11 +495,6 @@ $dark-gray: #333333;
 
 	.menu-line {
 		margin: 10px 0 20px;
-	}
-
-	.menu-subtitle {
-		max-width: 520px;
-		text-align: center;
 	}
 
 	.menu-buttons-container {
@@ -634,4 +631,85 @@ $dark-gray: #333333;
 	flex-direction: row;
 	justify-content: space-between;
 	background: #573a26;
+}
+
+.contact-section{
+	padding: 100px 80px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+
+	.contact-line{
+		margin: 10px 0 20px;
+	}
+
+	.contact-form{
+		width: 100%;
+		margin: 50px 0 10px;
+		display: flex;
+		flex-flow: row wrap;
+		justify-content: space-between;
+
+		.contact-input-small{
+			width: 32.5%;
+		} 
+
+		.contact-input-big{
+			margin-top: 10px;
+			height: 120px;
+			width: 100%;
+		}
+	}
+
+	.contact-container-button{
+		display: flex;
+		flex-direction: row;
+		margin-top: 10px;
+		justify-content: space-between;
+		width: 100%;
+
+		.contact-container{
+			display: flex;
+			flex-flow: row wrap;
+			width: 60%;
+			align-items: center;
+
+			.contact-card{
+				display: flex;
+				flex-direction: row;
+
+				.contact-gps-icon{
+					width: 23px;
+					height: 20px;
+				}
+
+				.contact-phone-icon{
+					width: 15px;
+					height: 15px;
+				}
+
+				.contact-mail-icon{
+					width: 20px;
+					height: 20px;
+				}
+
+				.contact-card-text{
+					color: gray;
+					margin-left: 10px;
+				}
+			}
+
+			.contact-card:not(:first-child){
+				margin-left: 20px;
+			}
+		}
+
+		.contact-button{
+			margin: 0;
+			width: 40%;
+			height: 60px;
+			color: white;
+			font-weight: 700;
+		}
+}
 }
