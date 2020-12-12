@@ -30,6 +30,18 @@ $link-border: #ffffff80;
 
 $yellow: #e8c300;
 
+.up-link{
+	position: fixed;
+	bottom: 50px;
+	left: 70px;
+	z-index: 100;
+}
+
+.up-link-icon{
+	width: 80px;
+	height: 80px;
+}
+
 .title {
 	font-family: "Banny Round";
 	text-transform: uppercase;
@@ -698,7 +710,6 @@ $dark-gray: #333333;
 			margin: 0;
 			width: 40%;
 			height: 60px;
-			color: white;
 			font-weight: 700;
 		}
 	}
