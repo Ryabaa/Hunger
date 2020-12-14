@@ -95,6 +95,7 @@ $sans: "Open Sans";
     height: 100px;
     display: flex;
     flex-direction: row;
+    justify-content: center;
     border-bottom: 1px solid $hero-border;
 
     .nav-link {
@@ -141,7 +142,7 @@ $sans: "Open Sans";
   justify-content: center;
 
   .hero-vertical-line {
-    height: 700px;
+    min-height: 700px;
   }
 
   .hero-left-container {
@@ -179,10 +180,12 @@ $sans: "Open Sans";
       font-size: 96px;
       line-height: 0px;
       color: white;
+      text-align: center;
+      line-height: 90px;
     }
 
     .hero-line {
-      margin: 80px 0 30px;
+      margin-bottom: 30px;
     }
 
     .hero-links-container {
@@ -230,7 +233,7 @@ $sans: "Open Sans";
     .hero-link-down {
       width: 60px;
       height: 60px;
-      margin-top: 80px;
+      margin: 80px 0;
     }
 
     .hero-icon-down:hover {
@@ -287,6 +290,7 @@ $bg-white: white;
   font-size: 36px;
   line-height: 48px;
   color: #000000;
+  text-align: center;
 }
 
 .section-subtitle {
@@ -395,6 +399,8 @@ $gray: #e5e5e5;
   font-weight: 400;
   letter-spacing: 0.05em;
   margin-bottom: 50px;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 
 .booking-info-span {
@@ -445,7 +451,7 @@ $gray: #e5e5e5;
 }
 
 .booking-button {
-  width: 570px;
+  width: 100%;
   height: 60px;
 }
 
@@ -453,18 +459,18 @@ $gray: #e5e5e5;
   display: flex;
   flex-direction: column;
   align-items: center;
+  width: 50%;
 }
 
 .booking-form {
-  width: 570px;
-  height: 200px;
   display: flex;
   justify-content: space-between;
-  flex-wrap: wrap;
+  flex-flow: row wrap;
   align-content: space-between;
+  min-height: 200px;
 
   .booking-input {
-    width: 277px;
+    width: 48%;
   }
 }
 
@@ -493,12 +499,13 @@ $dark-gray: #333333;
   }
 
   .menu-buttons-container {
+    width: 100%;
     margin: 50px 0;
     display: flex;
     flex-direction: row;
 
     .menu-button {
-      width: 120px;
+      width: 80%;
       height: 50px;
       display: flex;
       justify-content: center;
@@ -536,6 +543,10 @@ $dark-gray: #333333;
       flex-direction: column;
     }
 
+    .menu-cards-columns:not(:first-child) {
+      margin-left: 20px;
+    }
+
     .menu-card:not(:first-child) {
       margin-top: 50px;
     }
@@ -544,6 +555,7 @@ $dark-gray: #333333;
       font-size: 18px;
       line-height: 18px;
       color: $dark-gray;
+      text-align: start;
     }
 
     .menu-card-text {
@@ -565,6 +577,7 @@ $dark-gray: #333333;
 
 .events-section {
   background: url(./images/events-bg.png);
+  background-size: cover;
 
   .events-card {
     position: absolute;
@@ -599,6 +612,10 @@ $dark-gray: #333333;
   flex-direction: row;
   justify-content: space-between;
   background: #573a26;
+
+  .photo-image {
+    width: 25%;
+  }
 }
 
 .contact-section {
@@ -641,6 +658,7 @@ $dark-gray: #333333;
       flex-flow: row wrap;
       width: 60%;
       align-items: center;
+      justify-content: center;
 
       .contact-card {
         display: flex;

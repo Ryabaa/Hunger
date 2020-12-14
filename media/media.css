@@ -1,0 +1,115 @@
+@media (max-width: 1300px) {
+  .header .nav {
+    height: 100%;
+    max-width: 270px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: wrap row;
+            flex-flow: wrap row;
+  }
+  .hero .hero-center-container .hero-title {
+    font-size: 70px;
+  }
+  .right-image {
+    margin: 0;
+    width: 300px;
+    height: 300px;
+  }
+  .left-image {
+    margin: 0;
+    width: 300px;
+    height: 300px;
+  }
+  .sqare {
+    display: none;
+  }
+  .events-section .events-card {
+    width: 250px;
+    z-index: 2;
+  }
+  .events-section .events-card-left {
+    left: 255px;
+  }
+  .events-section .events-card-right {
+    right: 255px;
+  }
+  .events-section .events-title {
+    font-size: 20px;
+    text-align: center;
+  }
+}
+
+@media (max-width: 800px) {
+  .section-line-center {
+    display: none;
+  }
+  .hero-vertical-line {
+    display: none;
+  }
+  .events-image-left {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-item-align: start;
+        align-self: flex-start;
+    margin-top: 150px;
+  }
+  .events-image-right {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-item-align: end;
+        align-self: flex-end;
+    margin-bottom: 100px;
+  }
+  .events-vertical-line {
+    height: 950px;
+  }
+  .events-info {
+    margin: 850px 0 0;
+  }
+  .events-section {
+    height: 950px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .events-section .events-card-left {
+    margin-top: 120px;
+    left: 35px;
+    -webkit-transform: none;
+            transform: none;
+  }
+  .events-section .events-card-right {
+    right: 35px;
+    margin-top: 520px;
+    -webkit-transform: none;
+            transform: none;
+  }
+  .hero .hero-center-container .hero-links-container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .hero .hero-center-container .hero-links-container .hero-link-colored {
+    margin: 0 0 20px;
+  }
+  .hero .hero-right-container .hero-social-link {
+    margin-right: 10px;
+  }
+  .section {
+    padding: 0 10px;
+  }
+  .menu-section {
+    padding: 100px 10px;
+  }
+  .contact-section {
+    padding: 100px 10px;
+  }
+}
+/*# sourceMappingURL=media.css.map */
