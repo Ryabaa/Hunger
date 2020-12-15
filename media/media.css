@@ -43,6 +43,14 @@
 }
 
 @media (max-width: 800px) {
+  .up-link {
+    bottom: 30px;
+    left: 30px;
+  }
+  .up-link-icon {
+    width: 65px;
+    height: 65px;
+  }
   .section-line-center {
     display: none;
   }
@@ -86,7 +94,7 @@
   }
   .events-section .events-card-right {
     right: 35px;
-    margin-top: 520px;
+    margin-top: 530px;
     -webkit-transform: none;
             transform: none;
   }
@@ -110,6 +118,46 @@
   }
   .contact-section {
     padding: 100px 10px;
+  }
+}
+
+@media (max-width: 550px) {
+  .hero .hero-center-container .hero-title {
+    font-size: 54px;
+    line-height: 50px;
+  }
+  .section {
+    height: 900px;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -ms-flex-line-pack: center;
+        align-content: center;
+  }
+  .booking-container {
+    width: 80%;
+  }
+  .events-section {
+    height: 950px;
+    -ms-flex-wrap: unset;
+        flex-wrap: unset;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .section-line {
+    height: 900px;
+  }
+  .booking-section {
+    height: 1000px;
+  }
+  .events-vertical-line {
+    height: 950px;
+  }
+  .contact-section .contact-form .contact-input-small {
+    width: 31%;
   }
 }
 /*# sourceMappingURL=media.css.map */

@@ -19,7 +19,8 @@ a {
   font-family: "Banny Round";
   font-style: normal;
   font-weight: normal;
-  src: local("Banny Round"), url("./images/Banny-Round.woff") format("woff");
+  src: local("Banny Round"),
+    url("/Hunger/images/Banny-Round.woff") format("woff");
 }
 
 $hero-border: #ffffff33;
@@ -80,7 +81,7 @@ $sans: "Open Sans";
 }
 
 .header-hero-section {
-  background-image: url(./images/header-bg.png);
+  background-image: url(/Hunger/images/header-bg.png);
   background-size: cover;
   min-height: 800px;
 }
@@ -365,7 +366,7 @@ $bg-white: white;
 }
 
 .team-specialties-section {
-  background-image: url(./images/team-bg.png);
+  background-image: url(/Hunger/images/team-bg.png);
 
   .team-specialties-container {
     color: white;
@@ -576,7 +577,7 @@ $dark-gray: #333333;
 }
 
 .events-section {
-  background: url(./images/events-bg.png);
+  background: url(/Hunger/images/events-bg.png);
   background-size: cover;
 
   .events-card {
