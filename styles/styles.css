@@ -418,7 +418,7 @@ a {
 }
 
 .right-image {
-  margin-right: 80px;
+  margin-right: 72px;
   width: 475px;
   height: 475px;
   z-index: 1;
@@ -461,7 +461,7 @@ a {
 }
 
 .left-image {
-  margin-left: 80px;
+  margin-left: 72px;
   width: 475px;
   height: 475px;
   z-index: 1;
@@ -509,6 +509,7 @@ a {
 }
 
 .yellow-button {
+  cursor: pointer;
   margin-top: 10px;
   background-color: #e8c300;
   border-radius: 5px;
@@ -632,6 +633,7 @@ a {
 }
 
 .menu-section .menu-buttons-container .menu-button {
+  cursor: pointer;
   width: 80%;
   height: 50px;
   display: -webkit-box;
@@ -733,18 +735,19 @@ a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  z-index: 2;
 }
 
 .events-section .events-card-left {
   border-radius: 5px 5px 0px 0px;
-  left: 423px;
+  left: 415px;
   -webkit-transform: rotate(90deg);
           transform: rotate(90deg);
 }
 
 .events-section .events-card-right {
   border-radius: 5px 5px 0px 0px;
-  right: 423px;
+  right: 415px;
   -webkit-transform: rotate(-90deg);
           transform: rotate(-90deg);
 }

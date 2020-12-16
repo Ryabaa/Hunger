@@ -343,7 +343,7 @@ $bg-white: white;
 }
 
 .right-image {
-  margin-right: 80px;
+  margin-right: 72px;
   width: 475px;
   height: 475px;
   z-index: 1;
@@ -382,7 +382,7 @@ $bg-white: white;
 }
 
 .left-image {
-  margin-left: 80px;
+  margin-left: 72px;
   width: 475px;
   height: 475px;
   z-index: 1;
@@ -425,6 +425,7 @@ $gray: #e5e5e5;
 }
 
 .yellow-button {
+  cursor: pointer;
   margin-top: 10px;
   background-color: $yellow;
   border-radius: 5px;
@@ -506,6 +507,7 @@ $dark-gray: #333333;
     flex-direction: row;
 
     .menu-button {
+      cursor: pointer;
       width: 80%;
       height: 50px;
       display: flex;
@@ -587,17 +589,18 @@ $dark-gray: #333333;
     height: 60px;
     display: flex;
     align-items: center;
+    z-index: 2;
   }
 
   .events-card-left {
     border-radius: 5px 5px 0px 0px;
-    left: 423px;
+    left: 415px;
     transform: rotate(90deg);
   }
 
   .events-card-right {
     border-radius: 5px 5px 0px 0px;
-    right: 423px;
+    right: 415px;
     transform: rotate(-90deg);
   }
 

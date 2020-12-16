@@ -34,6 +34,9 @@
   }
 
   .events-section {
+    min-height: 0;
+    height: 520px;
+
     .events-card {
       width: 250px;
       z-index: 2;
@@ -186,5 +189,10 @@
         width: 31%;
       }
     }
+  }
+
+  .up-link-icon {
+    width: 55px;
+    height: 55px;
   }
 }
